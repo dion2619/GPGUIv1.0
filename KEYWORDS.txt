@@ -70,29 +70,9 @@ purple	KEYWORD1
 teal	KEYWORD1   
 navy	KEYWORD1   
 
-top_Corner_Camera		KEYWORD2
-left_Corner_Camera		KEYWORD2
-right_Corner_Camera		KEYWORD2
 
-top_LH_Side_Camera		KEYWORD2
-left_LH_Side_Camera		KEYWORD2
-right_LH_Side_Camera		KEYWORD2
-
-top_RH_Side_Camera		KEYWORD2
-left_RH_Side_Camera		KEYWORD2
-right_RH_Side_Camera		KEYWORD2
-
- D_Left		KEYWORD2      
- D_Right		KEYWORD2     
- D_Up		KEYWORD2        
- D_Down		KEYWORD2      
- B_X		KEYWORD2         
- B_Square		KEYWORD2    
- B_Triangle		KEYWORD2  
- B_Circle		KEYWORD2    
- L1		KEYWORD2          
- L2		KEYWORD2          
- R1		KEYWORD2          
- R2		KEYWORD2          
- Start		KEYWORD2       
- Select		KEYWORD2      
+write_Default_Wall_Texture_To_Ram	KEYWORD1
+raycast_Map_From_Ram	KEYWORD1
+write_Texture_To_Ram	KEYWORD1
+write_Default_Map_To_Ram	KEYWORD1
+raycast_Map_Preview	KEYWORD1

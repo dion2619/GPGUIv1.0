@@ -17,11 +17,10 @@ bool  move_Back           = false;
 bool  clipping_Enable     = false;
 bool  camera_Up           = false;
 bool  camera_Down         = false;
-float FOV                 = 0.66;
 int   current_Camera_PosX = 0;
 int   current_Camera_PosY = 0;
 float move_Speed          = 0.05;
-float turn_Speed          = 1.5;
+float turn_Speed          = 1.0;
 bool  crosshair_Enable    = true;
 bool  debug_Enable        = false;
 //
@@ -29,6 +28,7 @@ int  map_Pos = 0;
 byte map_Mem_Start_Address = 10;
 byte roof_Color = 0;
 byte floor_Color = 42;
+int bin;
 
 //TEXTURE RAM ADDRESS VALUES 1-16
 byte MAP[20][20] =
@@ -40,7 +40,7 @@ byte MAP[20][20] =
   {0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0},
   {0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0},
-  {0,0,0,0,0,16,17,0,0,0,0,0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
   {0,0,13,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0},
@@ -131,11 +131,18 @@ void loop()
          camera_Down,
          move_Speed,
          turn_Speed,
-         FOV,
          &current_Camera_PosX,
          &current_Camera_PosY,
+         &bin,
+         &bin,
+         &bin,
+         &bin,
+         &bin,
+         &bin,
+         &bin,
+         &bin,
          crosshair_Enable,
-         debug_Enable
+         debug_Enable        
      );
      
   cpu.refreshScreen();
